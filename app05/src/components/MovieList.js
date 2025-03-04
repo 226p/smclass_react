@@ -3,8 +3,8 @@ import React from 'react';
 // prop 변수 2개 -> 구조분해 : {}를 사용하여 prop변수를 분해해서 받을 수 있음
 const MovieList = ({movie,delMovie}) =>{
   const deleteBtn = () => {
-      alert(movie.no+"번 데이터를 삭제합니다.");
-      delMovie(movie.no);  // 삭제처리
+      alert(movie.id+"번 데이터를 삭제합니다.");
+      delMovie(movie.id);  // 삭제처리
   }
 
   return(
